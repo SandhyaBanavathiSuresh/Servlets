@@ -1,0 +1,10 @@
+<web-app>
+  <servlet>
+    <servlet-name>getMethods</servlet-name>
+    <servlet-class>GetXMethodsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getMethods</servlet-name>
+    <url-pattern>/getMethods</url-pattern>
+  </servlet-mapping>
+</web-app>

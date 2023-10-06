@@ -1,0 +1,178 @@
+<html>
+<head>
+<style>
+</style>
+</head>
+<body style="border: 1px solid black; padding:1rem 3rem; width:80%; margin-left:5rem">
+<form action="waiverForm" method="post">
+<div style="display:flex; justify-content: space-between;">
+<div>
+<h1 style="color:red;">Northeastern University</h1>
+<h2>Human Resources</h2>
+</div>
+<h1>Tuition Waiver Form</h1>
+</div>
+<div style="border: 1px solid black; padding:0.1rem 0.5rem">
+<p>This form is used by part-time faculty, part-time staff, retirees, their spouses or 
+domestic partners and their dependents.  All full-time faculty and staff should use the 
+online Tuition Waiver Form found on myNEU.  Before completing this form, please refer to 
+the Tuition Waiver Program Guidelines.Be sure to include a Dependent Certification Form 
+alongwith the submission of this form for any dependent children.
+</p>
+</div>
+<h2 style="color:red;">Section 1</h2>
+<label for="aterm">Academic Term: </label>
+<input type="text" name="aterm" style="border:none; border-bottom:1px solid black; outline:none">
+<label for="ayear">Academic Year: </label>
+<input type="text" name="ayear" style="border:none; border-bottom:1px solid black; outline:none">
+<label for="empstatus">Employee Status: </label>
+<input type="radio" value="P/T Staff" name="empstatus">P/T Staff 
+<input type="radio" value="P/T Faculty" name="empstatus">P/T Faculty 
+<input type="radio" value="Retiree" name="empstatus">Retiree 
+<input type="radio" value="Other" name="empstatus">Other <span><span>
+<p style="margin-top:-0.2rem">(Fall, Winter, Spring,  or Summer)* </p>
+<p>*Terms with multiple sessions are considered one academic term for 
+tuition waiver purposes e.g., summer sessions I andII are considered one academic term.</p>  
+<h2 style="color:red;">Section 2</h2>
+<div>
+<div style="display: flex;justify-content: space-between">
+<input type="text" name="studentName" style="border:none; border-bottom:1px solid black; width:30%; outline:none">
+<input type="text" name="relationship" style="border:none; border-bottom:1px solid black; width:30%; outline:none">
+<input type="text" name="nuid" style="border:none; border-bottom:1px solid black; width:30%; outline:none">
+</div>
+<div style="display: flex;justify-content: space-between">
+<label for="studentName">Student's Name</label>
+<label for="relationship">Relationship to Employee</label>
+<label for="nuid">Student's NUID</label>
+</div>
+</div>
+<br>
+<div>
+<div style="display: flex;justify-content: space-between">
+<input type="text" name="employeeName" style="border:none; border-bottom:1px solid black; width:65%; outline:none">
+<input type="text" name="empnuid" style="border:none; border-bottom:1px solid black; width:30%; outline:none">
+</div>
+<div style="display: flex;justify-content: space-between">
+<label for="employeeName">Employee's Name (if different from Student's)</label>
+<label for="empnuid">Employee's NUID</label>
+</div>
+</div>
+<br>
+<div>
+<div style="display: flex;justify-content: space-between">
+<input type="text" name="department" style="border:none; border-bottom:1px solid black; outline:none">
+<input type="text" name="camplocation" style="border:none; border-bottom:1px solid black; outline:none">
+<input type="text" name="phnumber" style="border:none; border-bottom:1px solid black; outline:none">
+<input type="text" name="supname" style="border:none; border-bottom:1px solid black; outline:none">
+</div>
+<div style="display: flex;justify-content: space-between">
+<label for="department">Department</label>
+<label for="camplocation">Campus Location</label>
+<label for="phnumber">Phone Number </label>
+<label for="supname">Supervisor's Name</label>
+</div>
+</div>
+<h2 style="color:red;">Section 3 </h2> 
+<label for="program"><span><i>Indicate the applicable school or program: </i></span></label>
+<input type="radio" value="Undergraduate Program" name="program">Undergraduate Program
+<input type="radio" value="Law School (excludes employees)" name="program">Law School (excludes employees) 
+<input type="radio" value="Doctoral Candidate" name="program">Doctoral Candidate 
+<br>
+<input type="radio" value="College of Professional Studies (CPS) Undergraduate" name="program">College of Professional Studies (CPS) Undergraduate
+<input type="radio" value="Graduate School" name="program">Graduate School 
+<input type="radio" value="CPS Graduate School" name="program">CPS Graduate School 
+<br>
+<br>
+<div style="border: 1px solid gray; padding:0rem 0.5rem; background-color:lightgray">
+<p>One course per academic term may be taken one-half hour before the end of your workday.  
+If this applies to you, this form must be signed by your 
+supervisor below and approved by Human Resources Management.</p>
+</div>
+<br>
+<div style="border: 1px solid gray; padding:0rem 0.5rem; background-color:lightgray">
+<p>Complete the following course information.  If you are an employee taking a job related course, 
+please attach the Job Related Designation Form to this waiver.</p>
+</div>
+<br>
+<table>
+<tbody>
+<tr>
+<td>Course No.</td>
+<td><input type="text" style="border:none;outline:none" value="Course Name"></td>
+<td><input type="text" style="border:none;outline:none" value="Supervisor Signature"></td>
+<td><input type="text" style="border:none;outline:none" value="Credit Hrs"></td>
+<td><input type="text" style="border:none;outline:none" value="Day(s)"></td>
+<td><input type="text" style="border:none;outline:none;margin-left:-3rem" value="Time"></td>
+</tr>
+<tr>
+	<td><input type="text" name="firstCourse" style="border:none; border-bottom:1px solid black;outline:none;width:50%"></td>
+    <td><input type="text" name="firstCourseName" style="border:none; border-bottom:1px solid black;outline:none;width:50%"></td>
+    <td><input type="text" name="firstSupervisorSignature"style="border:none; border-bottom:1px solid black;outline:none;width:50%"></td>
+    <td><input type="text" name="firstCreditHr" style="border:none; border-bottom:1px solid black;outline:none;width:50%"></td>
+    <td><input type="text" name="firstDays" style="border:none; border-bottom:1px solid black;outline:none;width:50%"></td>
+    <td><input type="text" name="firstTime" style="border:none; border-bottom:1px solid black;outline:none;width:50%;margin-left:-3rem"></td>
+    <td><input type="text" name="firstTime" value="a.m/p.m" style="border:none;outline:none;width:80%;margin-left:-6rem"></td>
+</tr>
+
+<tr>
+	<td><input type="text" name="secondCourse" style="border:none; border-bottom:1px solid black;outline:none;width:50%"></td>
+    <td><input type="text" name="secondCourseName" style="border:none; border-bottom:1px solid black;outline:none;width:50%"></td>
+    <td><input type="text" name="secondSupervisorSignature"style="border:none; border-bottom:1px solid black;outline:none;width:50%"></td>
+    <td><input type="text" name="secondCreditHr" style="border:none; border-bottom:1px solid black;outline:none;width:50%"></td>
+    <td><input type="text" name="secondDays" style="border:none; border-bottom:1px solid black;outline:none;width:50%"></td>
+    <td><input type="text" name="secondTime" style="border:none; border-bottom:1px solid black;outline:none;width:50%;margin-left:-3rem"></td>
+    <td><input type="text" name="secondTime" value="a.m/p.m" style="border:none;outline:none;width:80%;margin-left:-6rem"></td>
+</tr>
+<tr>
+	<td><input type="text" name="thirdCourse" style="border:none; border-bottom:1px solid black;outline:none;width:50%"></td>
+    <td><input type="text" name="thirdCourseName" style="border:none; border-bottom:1px solid black;outline:none;width:50%"></td>
+    <td><input type="text" name="thirdSupervisorSignature"style="border:none; border-bottom:1px solid black;outline:none;width:50%"></td>
+    <td><input type="text" name="thirdCreditHr" style="border:none; border-bottom:1px solid black;outline:none;width:50%"></td>
+    <td><input type="text" name="thirdDays" style="border:none; border-bottom:1px solid black;outline:none;width:50%"></td>
+    <td><input type="text" name="thirdTime" style="border:none; border-bottom:1px solid black;outline:none;width:50%;margin-left:-3rem"></td>
+    <td><input type="text" name="thirdTime" value="a.m/p.m" style="border:none;outline:none;width:80%;margin-left:-6rem"></td>
+</tr>
+</tbody>
+</table>
+
+<h2 style="color:red;">Section 4</h2>
+<h4><strong style="font-size:1.1rem"> In accordance with Northeastern University's Tuition Waiver Program Guidelines, 
+my signature attests that I am currently enrolled in the above courses, or that the student 
+listed above is my spouse, domestic partner or unmarried dependent child or the dependent child 
+of my domestic partner as defined under current IRS tax regulations.  I also certify that I have 
+read the Tuition Waiver Program Guidelines.
+</strong></h4>
+<div style="margin-top:-2rem">
+<br>
+<div style="display: flex;justify-content: space-between">
+<input type="text" name="empsignature" style="border:none; border-bottom:1px solid black;outline:none">
+<input type="date" name="date1" style="border:none; border-bottom:1px solid black;outline:none;width:20%">
+</div>
+<div style="display: flex;justify-content: space-between">
+<label for="empsignature">Employee's Signature</label>
+<label for="date1">Date </label>
+</div>
+</div>
+<h2 style="color:red;">Section 5</h2>
+<div>
+<div style="display: flex;justify-content: space-between">
+<input type="text" name="approval" style="border:none; border-bottom:1px solid black;outline:none">
+<input type="date" name="date2" style="border:none; border-bottom:1px solid black;outline:none;width:20%">
+</div>
+<div style="display: flex;justify-content: space-between">
+<label for="approval">HRM Approval</label>
+<label for="date2">Date</label>
+</div>
+</div>
+<br>
+<div style="border: 1px solid gray; padding:0rem 0.5rem; background-color:lightgray">
+<p> Forms will be reviewed for completeness and eligibility.  You will be notified if any additional 
+information is needed. Mail completed formto <strong>Human Resources, 250 Columbus Place or fax to (617) 373-7610.</strong> 
+All waivers must be received by HRM within 30 days of the course start date.
+</p>
+</div>
+<hr style="background-color:red;height: 2px; border:red">
+<input type="submit" style="padding:0.2rem 0.5rem; cursor:pointer; background-color:red; color:white; border:none"> 
+</form>
+</body>
+</html>

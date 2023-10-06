@@ -1,0 +1,99 @@
+<html>
+<head>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+        
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        select {
+            height: 35px;
+        }
+        
+        textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+<form action="form" method="post">
+<label for="email">Email: </label>
+<input type="email" name="email" id="email">
+<br>
+<label for="password">Password: </label>
+<input type="password" name="password" id="password">
+<br>
+<label name="confirmpassword">Confirm Password: </label>
+<input type="password" name="confirmpassword" id="confirmpassword">
+<br>
+<label for="file">Upload Your Picture:</label>
+<input type="file" id="file" name="file">
+<br>
+<br>
+<label name="gender">Gender: </label>
+<input type="radio" value="Male" name="gender" id="male"> Male
+<input type="radio" value="Female" name="gender" id="female"> Female
+<br>
+<br>
+<label>Select Country: </label>
+<select id="country" name="country">
+<option value="USA">USA</option>
+<option value="India">India</option>
+<option value="UK">UK</option>
+</select>
+<br>
+<br>
+<label name="hobby">Hobby: </label>
+<input type="checkbox" value="Cricket" name="hobby" id="cricket"> Cricket
+<input type="checkbox" value="Football" name="hobby" id="football"> Football
+<br>
+<br>
+<label name="address">Address: </label>
+<textarea rows="5" cols="10" name="address"></textarea>
+<br>
+<input type="submit">
+</form>
+</body>
+</html>
